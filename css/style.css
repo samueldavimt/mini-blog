@@ -11,7 +11,7 @@
 :root{
     --color-1: #161616;
     --color-2: blueviolet;
-    --size-container: 1200px;
+    --size-container: 1270px;
 }
 
 html{
@@ -34,13 +34,16 @@ header{
     padding: 20px;
     justify-content: space-between;
 }
-
+.header-container #logo{
+    margin-right: 15px;
+}
 .header-container #logo img{
     width: 75px;
 }
 
 .header-container ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -60,7 +63,7 @@ header{
 .header-container ul li{
     font-size: 20px;
     position: relative;
-    margin: 0px 8px;
+    margin: 8px 8px;
 }
 
 .header-container ul li:hover, .header-container ul li a:hover{
@@ -104,7 +107,7 @@ header{
     margin: 30px 0px;
 }
 .post:first-child .image-post{
-    height: 600px;
+    height: 650px;
     width: 100%;
 }
 
@@ -204,4 +207,70 @@ footer{
     color: white;
     font-size: 18px;
     text-align: center;
+}
+
+@media (max-width:1110px){
+    .post{
+        flex: 1 1 300px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width:998px){
+    .post{
+        flex: 1 1 250px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width:840px){
+    .container-posts{
+        justify-content: center;
+    }
+
+    .post{
+        flex: 1 1 300px;
+        max-width: 300px;
+    }
+
+    .post:first-child .image-post{
+    height: auto;
+    width: 100%;
+}
+}
+
+@media (max-width:770px){
+    .container-posts{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post{
+        flex: 0;
+        max-width: 90%;
+       
+    }
+}
+
+@media (max-width:550px){
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-container ul{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+
+    .header-container ul.categories{
+        z-index: 999;
+        justify-content: stretch;
+        
+    }
+
+    .header-container ul li{
+        margin-bottom: 20px;
+    }
 }

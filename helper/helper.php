@@ -24,7 +24,7 @@
         function filterTag($tag){
                 $pattern = "/['\"`´]/";
                if(!is_string($tag)){
-                       return "não é string";
+                       return false;
                }
 
                $tag = strip_tags($tag);
