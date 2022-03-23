@@ -41,7 +41,7 @@
             'id'=> 5,
             'title'=> 'Tudo Sobre Desenvolvimento WEB',
             'description'=> 'Veja formas de como desenvolver uma aplicação segura com a linguagem PHP',
-            'tags'=> ['Javscript','PHP', 'HTML'],
+            'tags'=> ['Javascript','PHP', 'HTML'],
             'img'=> 'image-5.jpg'
             
         ]

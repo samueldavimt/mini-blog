@@ -20,4 +20,17 @@
                 }
                     
         }
+
+        function filterTag($tag){
+                $pattern = "/['\"`´]/";
+               if(!is_string($tag)){
+                       return "não é string";
+               }
+
+               $tag = strip_tags($tag);
+               $tag = preg_replace($pattern, '',$tag);
+               $tag = filter_var($tag, FILTER_SANITIZE_SPECIAL_CHARS);
+
+               return $tag;
+        }
 ?>
