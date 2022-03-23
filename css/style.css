@@ -18,12 +18,177 @@ html{
     position: relative;
     min-height: 100vh;
 }
+/* HEADER */
 
 header{
     background-color: var(--color-1);
+    margin-bottom: 10px;
 }
+
+.header-container{
+    color: white;
+    max-width: var(--size-container);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.header-container #logo img{
+    width: 75px;
+}
+
+.header-container ul{
+    display: flex;
+}
+
+
+.header-container ul.categories{
+    flex-direction: column;
+    position:absolute;
+    background-color: var(--color-1);
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    left: -18px;
+    transition: 0.3s ease;
+    overflow: hidden;
+    max-height:0px;
+}
+
+.header-container ul li{
+    font-size: 20px;
+    position: relative;
+    margin: 0px 8px;
+}
+
+.header-container ul li:hover, .header-container ul li a:hover{
+    transition: 0.2s;
+    color: var(--color-2);
+}
+
+.header-container ul.categories li{
+    font-size: 17px;
+    margin: 8px 0px;
+}
+
+.header-container ul li a{
+    color: white;
+    padding: 10px 12px;
+}
+
+/*  MAIN */
+.main{
+    max-width: var(--size-container);
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+}
+
+/* POSTS */
+
+.container-posts{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+   
+}
+
+.post:first-child{
+    min-width: 100%;
+    margin: 30px 0px;
+}
+.post:first-child .image-post{
+    height: 600px;
+    width: 100%;
+}
+
+.post{
+    flex: 1 1 340px;
+    max-width: 340px;
+    margin: 15px 12px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.title-post{
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--color-2);
+}
+
+.title-post:hover{
+    color: rgb(131, 17, 238);
+}
+
+.post:first-child .title-post{
+    font-size: 22px;
+}
+.post:first-child .title-description{
+        font-size: 18px;
+
+}
+.title-description{
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.4em;
+    color: #726e6e;
+}
+
+.tags{
+    margin-top: 10px;
+    
+    display: flex;
+
+}
+
+.tags li{
+    font-size: 13px;
+    color: var(--color-2);
+    margin: 0 10px 0px 0px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    
+}
+.tags li ul{
+    max-height: auto;
+    max-width: auto;
+}
+
+
+
+.post-visited .title-post{
+    text-align: center;
+    font-size: 25px !important;
+    margin-bottom: 20px;
+}
+
+.post-visited .title-description{
+    padding: 10px;
+}
+.post-visited .tags{
+    padding: 10px;
+}
+
+
+/* FOOTER */
 
 footer{
     position: absolute;
     bottom: 0px;
+    background-color: var(--color-1);
+    padding: 28px 20px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
 }

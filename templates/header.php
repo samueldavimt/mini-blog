@@ -2,7 +2,7 @@
 
     $ROOT_DIR = $_SERVER["DOCUMENT_ROOT"] . "/mini-blog/";
 
-    require_once($ROOT_DIR . "helper/url.php");
+    require_once($ROOT_DIR . "helper/helper.php");
     require_once($ROOT_DIR . "dates/dates.php");
     
     
@@ -15,7 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css">
+    <script src=""></script>
 </head>
 <body>
     
@@ -27,7 +28,7 @@
                 <ul>
                     <li><a href="<?=$BASE_URL?>">Home</a></li>
 
-                    <li>
+                    <li id="list-categories">
                         Categories
                         <ul class="categories">
                             
